@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css"
+    <title></title>
+  </head>
+  <body>
+      <header>
+        <h1>ARCADES</h1>
+      </header>
+      <main>
+        <div class="center_block">
+
+          <div class="sign-in">
+            <a href="#connexion" target="_top"><p> Sign in </p></a>
+          </div><!-- fin sign in -->
+
+          <div class="sign-up">
+            <a href="#register"><p> Sign up </p></a>
+          </div><!-- fin sign up -->
+
+          <div class="register" id="register">
+
+            <div class="doc">
+              <form action="./menu.html">
+
+                <p><label for="mail">   Mail :</label>
+                  <input placeholder="Ex: totodu85@exemple.com" type="text" name="mail" id="mail" required/>
+                </p>
+
+                <p><label for="pseudo">   Pseudo :</label>
+                  <input placeholder="Ex: totodu85" type="text" name="pseudo" id="pseudo" required/>
+                </p>
+
+                <p><label for="mdp">Password :  </label>
+                  <input type="password" placeholder="%19JaimeLesChats" name="mdp" id="mdp" required />
+                </p>
+
+                <div class="submit">
+                  <p>
+                    <input type="submit" value="register" />
+                  </p>
+                </div>
+
+                <p><a href="#connexion" class="compte"><em>you already have an account ?</em></a></p>
+
+              </form>
+            </div>
+
+          </div><!-- fin register-->
+
+          <div class="connexion" id="connexion">
+
+            <div class="co">
+
+              <h1> Connexion </h1>
+
+              <form action="./menu.html" onsubmit="return envoi()">
+
+                <p><label for="pseudo">   Pseudo :</label>
+                  <input placeholder="Ex: totodu85" type="text" name="pseudo" id="login" required/>
+                </p>
+
+                <p><label for="mdp">Password :  </label>
+                  <input type="password" name="mdp" id="password" required />
+                </p>
+
+                <div class="submit">
+                  <p>
+                    <input type="submit" value="Connexion" />
+                  </p>
+                </div>
+
+                <p>
+                  <input type="checkbox" name="souvenir" id="souvenir" checked/>
+                  <label for="souvenir">Remember me</label>
+                </p>
+
+                <p><a href="mdp_oublie.html" target="_blank"><em>Don't remember password ?</em></a></p>
+
+                <p><a href="#register"><em>No account yet ?</em></a></p>
+
+              </form>
+
+            </div>
+
+          </div>
+
+          </div> <!-- fin center-block -->
+      </main>
+      <script src="./script.js"></script>
+  </body>
+</html>

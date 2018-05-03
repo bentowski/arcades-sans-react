@@ -1,0 +1,13 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+#globale{
+  background-color: black;
+}
+#joueur1{
+  background-color: black;
+}
+#joueur2{
+  background-color: black;
+}
