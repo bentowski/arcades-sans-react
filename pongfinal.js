@@ -21,7 +21,6 @@ const joueur1 = document.getElementById('joueur1')
 const j1Ctx = joueur1.getContext('2d')
 const joueur2 = document.getElementById('joueur2')
 const j2Ctx = joueur2.getContext('2d')
-
 //=================initialisation================
 
 var init = () => {
@@ -166,3 +165,4 @@ var moveBall = () =>{
   console.log(xBalle);
   console.log(yBalle);
 }
+init()

@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./style.css"
-    <title></title>
-  </head>
-  <body>
-      <header>
-        <h1>ARCADES</h1>
-      </header>
-      <main>
-        <div class="center_block">
 
-          <div class="sign-in">
-            <a href="#connexion" target="_top"><p> Sign in </p></a>
-          </div><!-- fin sign in -->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style.css" <title>
+  </title>
+</head>
 
-          <div class="sign-up">
-            <a href="#register"><p> Sign up </p></a>
-          </div><!-- fin sign up -->
+<body>
+  <header>
+    <h1>ARCADES</h1>
+  </header>
+  <main>
+    <div class="center_block">
 
-          <div class="register" id="register">
+      <div class="sign-in">
+        <a href="#connexion" target="_top">
+          <p> Sign in </p>
+        </a>
+      </div><!-- fin sign in -->
 
-            <div class="doc">
-              <form action="./menu.html">
+      <div class="sign-up">
+        <a href="#register">
+          <p> Sign up </p>
+        </a>
+      </div><!-- fin sign up -->
 
-                <p><label for="mail">   Mail :</label>
-                  <input placeholder="Ex: totodu85@exemple.com" type="text" name="mail" id="mail" required/>
-                </p>
+      <div class="register" id="register">
 
-                <p><label for="pseudo">   Pseudo :</label>
-                  <input placeholder="Ex: totodu85" type="text" name="pseudo" id="pseudo" required/>
-                </p>
+        <div class="doc">
+          <form action="./menu.html">
 
-                <p><label for="mdp">Password :  </label>
-                  <input type="password" placeholder="%19JaimeLesChats" name="mdp" id="mdp" required />
-                </p>
+            <p><label for="mail"> Mail :</label>
+              <input placeholder="Ex: totodu85@exemple.com" type="text" name="mail" id="mail" required />
+            </p>
 
-                <div class="submit">
-                  <p>
-                    <input type="submit" value="register" />
-                  </p>
-                </div>
+            <p><label for="pseudo"> Pseudo :</label>
+              <input placeholder="Ex: totodu85" type="text" name="pseudo" id="pseudo" required />
+            </p>
 
-                <p><a href="#connexion" class="compte"><em>you already have an account ?</em></a></p>
+            <p><label for="mdp">Password : </label>
+              <input type="password" placeholder="%19JaimeLesChats" name="mdp" id="mdp" required />
+            </p>
 
-              </form>
+            <div class="submit">
+              <p>
+                <input type="submit" value="register" />
+              </p>
             </div>
 
-          </div><!-- fin register-->
+            <p><a href="#connexion" class="compte"><em>you already have an account ?</em></a></p>
 
-          <div class="connexion" id="connexion">
+          </form>
+        </div>
 
-            <div class="co">
+      </div><!-- fin register-->
 
-              <h1> Connexion </h1>
+      <div class="connexion" id="connexion">
 
-              <form action="./menu.html" onsubmit="return envoi()">
+        <div class="co">
 
-                <p><label for="pseudo">   Pseudo :</label>
-                  <input placeholder="Ex: totodu85" type="text" name="pseudo" id="login" required/>
-                </p>
+          <h1> Connexion </h1>
 
-                <p><label for="mdp">Password :  </label>
-                  <input type="password" name="mdp" id="password" required />
-                </p>
+          <form action="./menu.html" onsubmit="return envoi()">
 
-                <div class="submit">
-                  <p>
-                    <input type="submit" value="Connexion" />
-                  </p>
-                </div>
+            <p><label for="pseudo"> Pseudo :</label>
+              <input placeholder="Ex: totodu85" type="text" name="pseudo" id="login" required />
+            </p>
 
-                <p>
-                  <input type="checkbox" name="souvenir" id="souvenir" checked/>
-                  <label for="souvenir">Remember me</label>
-                </p>
+            <p><label for="mdp">Password : </label>
+              <input type="password" name="mdp" id="password" required />
+            </p>
 
-                <p><a href="mdp_oublie.html" target="_blank"><em>Don't remember password ?</em></a></p>
-
-                <p><a href="#register"><em>No account yet ?</em></a></p>
-
-              </form>
-
+            <div class="submit">
+              <p>
+                <input type="submit" value="Connexion" />
+              </p>
             </div>
 
-          </div>
+            <p>
+              <input type="checkbox" name="souvenir" id="souvenir" checked />
+              <label for="souvenir">Remember me</label>
+            </p>
 
-          </div> <!-- fin center-block -->
-      </main>
-      <script src="./script.js"></script>
-  </body>
+            <p><a href="mdp_oublie.html" target="_blank"><em>Don't remember password ?</em></a></p>
+
+            <p><a href="#register"><em>No account yet ?</em></a></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div> <!-- fin center-block -->
+  </main>
+  <script src="./script.js"></script>
+</body>
+
 </html>
