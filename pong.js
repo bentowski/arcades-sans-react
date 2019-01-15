@@ -12,6 +12,7 @@ let middle=1500/2-5
   , xBalle=300
   , yBalle=400
   , sizeBalle=10
+  , levelUp=0.5
   , vitessex=sizeBalle/2
   , vitessey=sizeBalle/2
   , game=true
@@ -146,7 +147,7 @@ var ia = ()=>{
 
 }
 
-//===============balle===================
+//===============ball===================
 var moveBall = () =>{
     ctx.clearRect(0,0,globale.width,globale.height)
     y=0
@@ -188,6 +189,7 @@ var moveBall = () =>{
     }
     if(yBalle+sizeBalle<=globale.height){
       vitessey=-vitessey
+
     }
     if(yBalle-sizeBalle>=0){
       vitessey=-vitessey
@@ -197,6 +199,10 @@ var moveBall = () =>{
     }
     if(xBalle<=10 && yJ1<yBalle+sizeBalle && yBalle-sizeBalle<yJ1+100){
       vitessex=-vitessex
+      vitessex+=levelUp
+      console.log(levelUp);
+      console.log(vitessex);
+      console.log(vitessey);
     }
     if(xBalle+sizeBalle<0){
       console.log("end");
@@ -206,11 +212,15 @@ var moveBall = () =>{
       console.log("end");
       game=false
     }
-    console.log("test");
     if(game){
       window.requestAnimationFrame(moveBall)
     }else{
-      gameOver()
+      console.log(vitessex);
+      if(vitessex>35){
+        gameOver()
+      }else{
+        console.log("WIN !!!");
+      }
     }
 }
 

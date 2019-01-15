@@ -2,6 +2,9 @@ body{
   display: flex;
   justify-content: center;
 }
+/* .canva{
+  margin-top: auto;
+} */
 #globale{
   background-color: black;
 }
